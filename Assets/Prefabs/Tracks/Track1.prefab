@@ -1,0 +1,576 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1780787708966526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4857696933403658}
+  - component: {fileID: 7624978241069490718}
+  - component: {fileID: 114538932164975698}
+  - component: {fileID: 114017903055478940}
+  - component: {fileID: 5081417897535071454}
+  m_Layer: 0
+  m_Name: Track1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4857696933403658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780787708966526}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7624978241069490718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780787708966526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c03d4909e2ffd143aa578691f708698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rebuild: 0
+  TrackLength: 320.33533
+  TrackData:
+    PoleCount: 32
+    CurveWidthScale: 0.5
+    Height: 0
+    StartLineDist: 8
+    EndLineDist: 315
+    WaterLevel: 0.09
+    WaterWidth: 1.8
+    BaseWidth: 2
+    BaseHeight: 0.01
+    WallWidth: 0.1
+    WallHeight: 0.1
+    SegmentsCount: 512
+    Splines: {fileID: 1780787708966526}
+    StructureMaterial: {fileID: 2100000, guid: 24b41eeb02f1e684b8f1a23c72a1422c, type: 2}
+    WaterMaterial: {fileID: 2100000, guid: 6bcfc53fdabe0274f822cb32630aa5a5, type: 2}
+    WaterMaterial2: {fileID: 2100000, guid: 708029cb2cafc5d4d83af5493c9930fb, type: 2}
+    CurveMaterial: {fileID: 2100000, guid: 978d766101618884f93a7a41efeb3d4c, type: 2}
+    Curves:
+    - Side: 1
+      Start: 135
+      Length: 16
+    Props:
+    - Type: 0
+      DistStart: 30
+    - Type: 0
+      DistStart: 70
+    - Type: 0
+      DistStart: 285
+    - Type: 2
+      DistStart: 317
+    Enemies:
+    - Type: 0
+      Start: 0
+      Count: 1
+      DistStart: 22
+      ActivateInterval: 0.5
+      ForwardSpeed: 0.01
+      LateralTime: 6
+    - Type: 0
+      Start: 0
+      Count: 1
+      DistStart: 50
+      ActivateInterval: 0.5
+      ForwardSpeed: 0.01
+      LateralTime: 6
+    - Type: 0
+      Start: 0
+      Count: 1
+      DistStart: 78
+      ActivateInterval: 0.5
+      ForwardSpeed: 0.01
+      LateralTime: 6
+    - Type: 0
+      Start: 0
+      Count: 1
+      DistStart: 230
+      ActivateInterval: 0.5
+      ForwardSpeed: 0.01
+      LateralTime: 6
+    - Type: 0
+      Start: 0
+      Count: 1
+      DistStart: 138
+      ActivateInterval: 0.5
+      ForwardSpeed: 0.01
+      LateralTime: 6
+    - Type: 0
+      Start: 0
+      Count: 1
+      DistStart: 138
+      ActivateInterval: 0.5
+      ForwardSpeed: 0.01
+      LateralTime: 6
+    PickupSpawners:
+    - Type: 0
+      Start: 0
+      Count: 5
+      DistStart: 20
+      ActivateInterval: 1
+      ForwardSpeed: 0.1
+      LateralTime: 4
+--- !u!114 &114538932164975698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780787708966526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d20671ad38ded4fa2362df353b9a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showHandles: 1
+  hidden: 0
+  parent: {fileID: 0}
+  ccName: 
+  fields: 3
+  mathType: 0
+  sectionParts: 100
+  optimizeStraightLines: 0
+  tolerance: 0.2
+  usePositionToCalculateTangents: 0
+  updateMode: 0
+  rendererForUpdateCheck: {fileID: 0}
+  mathChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: BansheeGz.BGSpline.Components.BGCcMath+MathChangedEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  spheresScale: 0.5
+  spheresColor: {r: 1, g: 1, b: 1, a: 1}
+  spheresCount: 100
+--- !u!114 &114017903055478940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780787708966526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70f079e2a6bf364e8185b765fbe61c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    hideHandles: 0
+    newPointDistance: 2
+    showCurve: 1
+    showCurveMode: 1
+    showCurveOption: 0
+    sections: 20
+    showPointMenu: 1
+    showTangents: 0
+    tangentsSize: 0.7
+    tangentsColor: {r: 1, g: 1, b: 1, a: 1}
+    tangentsPerSection: 1
+    controlType: 1
+    vRay: 0
+    lineColor: {r: 1, g: 0, b: 0, a: 1}
+    restrictGizmoz: 
+    showPointControlType: 1
+    showPointPosition: 1
+    showHandles: 1
+    handlesType: 0
+    handlesSettings:
+      RemoveX: 0
+      RemoveY: 0
+      RemoveZ: 0
+      RemoveXZ: 0
+      RemoveXY: 0
+      RemoveYZ: 0
+      AxisScale: 1
+      PlanesScale: 1
+      Alpha: 1
+    showLabels: 1
+    labelColor: {r: 1, g: 1, b: 1, a: 1}
+    showPositions: 0
+    labelColorSelected: {r: 0, g: 1, b: 0, a: 1}
+    showSpheres: 1
+    sphereRadius: 0.1
+    sphereColor: {r: 1, g: 0, b: 0, a: 1}
+    showPointControlPositions: 1
+    showControlHandles: 1
+    controlHandlesType: 0
+    controlHandlesSettings:
+      RemoveX: 0
+      RemoveY: 0
+      RemoveZ: 0
+      RemoveXZ: 0
+      RemoveXY: 0
+      RemoveYZ: 0
+      AxisScale: 0.7
+      PlanesScale: 0.7
+      Alpha: 0.7
+    controlHandlesColor: {r: 0, g: 1, b: 1, a: 1}
+    showControlLabels: 1
+    showControlPositions: 0
+    labelControlColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    showTransformField: 0
+    existing: 1
+  mode2D: 0
+  closed: 0
+  points:
+  - controlType: 1
+    positionLocal: {x: -32.16772, y: 0, z: -51.7194}
+    controlFirstLocal: {x: 0.0024986267, y: -0, z: -0.24342346}
+    controlSecondLocal: {x: -0.0024986267, y: 0, z: 0.24342346}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -30.43006, y: 0, z: -33.571194}
+    controlFirstLocal: {x: -1.6819401, y: -0, z: -9.9572525}
+    controlSecondLocal: {x: 1.6819401, y: 0, z: 9.9572525}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: 9.740395, y: 0, z: -15.218662}
+    controlFirstLocal: {x: 0.1919117, y: 0, z: -6.1027946}
+    controlSecondLocal: {x: -0.1919117, y: -0, z: 6.1027946}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -11.092951, y: 0, z: -10.050097}
+    controlFirstLocal: {x: 0.1408186, y: 0, z: 3.766387}
+    controlSecondLocal: {x: -0.1408186, y: -0, z: -3.766387}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -5.6586676, y: 3, z: -5.189539}
+    controlFirstLocal: {x: -0.3773303, y: -2.4273157, z: -9.567957}
+    controlSecondLocal: {x: 0.3773303, y: 2.4273157, z: 9.567957}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: 9.197352, y: 0, z: 2.516511}
+    controlFirstLocal: {x: -0.19673729, y: -0, z: -6.8830853}
+    controlSecondLocal: {x: 0.19673729, y: 0, z: 6.8830853}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -15.20843, y: 0, z: 7.100048}
+    controlFirstLocal: {x: 0.13244343, y: -0, z: -7.2983265}
+    controlSecondLocal: {x: -0.13244343, y: 0, z: 7.2983265}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: 2.8960996, y: -0.99999756, z: 14.413159}
+    controlFirstLocal: {x: -0.257339, y: -0.0056288242, z: -6.4485693}
+    controlSecondLocal: {x: 0.257339, y: 0.0056288242, z: 6.4485693}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -11.0757675, y: 0, z: 21.03297}
+    controlFirstLocal: {x: 1.3655338, y: 0, z: -6.054407}
+    controlSecondLocal: {x: -1.3655338, y: -0, z: 6.054407}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: 1.6720657, y: -0.99999994, z: 42.12796}
+    controlFirstLocal: {x: -0.10602951, y: -0.0002629161, z: -8.546034}
+    controlSecondLocal: {x: 0.10602951, y: 0.0002629161, z: 8.546034}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -11.478095, y: 0, z: 35.263924}
+    controlFirstLocal: {x: 3.1501017, y: -0, z: 3.8128586}
+    controlSecondLocal: {x: -3.1501017, y: 0, z: -3.8128586}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -30.299118, y: 0, z: 33.51763}
+    controlFirstLocal: {x: 6.2296524, y: 0, z: -12.992321}
+    controlSecondLocal: {x: -6.2296524, y: -0, z: 12.992321}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -18.8852, y: 0, z: 49.102432}
+    controlFirstLocal: {x: -1.4891281, y: -0, z: -0.22879791}
+    controlSecondLocal: {x: 1.4891281, y: 0, z: 0.22879791}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: 20.895004, y: 0, z: 56.54207}
+    controlFirstLocal: {x: -1.0037893, y: 0, z: -0.36288548}
+    controlSecondLocal: {x: 1.0037893, y: -0, z: 0.36288548}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  pointsComponents: []
+  pointsGameObjects: []
+  fields: []
+  snapType: 0
+  snapAxis: 1
+  snapDistance: 10
+  snapLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  snapTriggerInteraction: 0
+  snapToBackFaces: 0
+  snapMonitoring: 0
+  eventMode: 0
+  pointsMode: 0
+  forceChangedEventMode: 0
+--- !u!114 &5081417897535071454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780787708966526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a85c5879d519aa4ab2ebbf42591149a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - position: {x: -29.697737, y: 0, z: -21.31801}
+    direction: {x: -27.82381, y: 0, z: -21.04339}
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 9.4679985, y: 0, z: -15.240246}
+    direction: {x: 9.374668, y: 0, z: -10.269684}
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: -9.144529, y: 0, z: -9.748085}
+    direction: {x: -9.06912, y: 0, z: -5.5247593}
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 2.0820694, y: 2.7254982, z: -4.6634045}
+    direction: {x: 2.1153622, y: 2.7254982, z: -1.468359}
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: -7.5473804, y: 2.7080517, z: 0}
+    direction: {x: -9.455538, y: 2.7080517, z: 1.4537163}
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: -11.573144, y: 0, z: 6.45249}
+    direction: {x: -14.585389, y: 0, z: 6.429022}
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: -11.913637, y: 0, z: 2.5323143}
+    direction: {x: -9.8123, y: 0, z: 1.8303795}
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 10, y: 0, z: 1.6984863}
+    direction: {x: 12.148373, y: 0, z: 1.7358036}
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  curves:
+  - n1:
+      position: {x: -29.697737, y: 0, z: -21.31801}
+      direction: {x: -27.82381, y: 0, z: -21.04339}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    n2:
+      position: {x: 9.4679985, y: 0, z: -15.240246}
+      direction: {x: 9.374668, y: 0, z: -10.269684}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - n1:
+      position: {x: 9.4679985, y: 0, z: -15.240246}
+      direction: {x: 9.374668, y: 0, z: -10.269684}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    n2:
+      position: {x: -9.144529, y: 0, z: -9.748085}
+      direction: {x: -9.06912, y: 0, z: -5.5247593}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - n1:
+      position: {x: -9.144529, y: 0, z: -9.748085}
+      direction: {x: -9.06912, y: 0, z: -5.5247593}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    n2:
+      position: {x: 2.0820694, y: 2.7254982, z: -4.6634045}
+      direction: {x: 2.1153622, y: 2.7254982, z: -1.468359}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - n1:
+      position: {x: 2.0820694, y: 2.7254982, z: -4.6634045}
+      direction: {x: 2.1153622, y: 2.7254982, z: -1.468359}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    n2:
+      position: {x: -7.5473804, y: 2.7080517, z: 0}
+      direction: {x: -9.455538, y: 2.7080517, z: 1.4537163}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - n1:
+      position: {x: -7.5473804, y: 2.7080517, z: 0}
+      direction: {x: -9.455538, y: 2.7080517, z: 1.4537163}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    n2:
+      position: {x: -11.573144, y: 0, z: 6.45249}
+      direction: {x: -14.585389, y: 0, z: 6.429022}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - n1:
+      position: {x: -11.573144, y: 0, z: 6.45249}
+      direction: {x: -14.585389, y: 0, z: 6.429022}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    n2:
+      position: {x: -11.913637, y: 0, z: 2.5323143}
+      direction: {x: -9.8123, y: 0, z: 1.8303795}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - n1:
+      position: {x: -11.913637, y: 0, z: 2.5323143}
+      direction: {x: -9.8123, y: 0, z: 1.8303795}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    n2:
+      position: {x: 10, y: 0, z: 1.6984863}
+      direction: {x: 12.148373, y: 0, z: 1.7358036}
+      Changed:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  Length: 122.54059
+  NodeCountChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  CurveChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

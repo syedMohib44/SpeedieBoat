@@ -1,0 +1,16 @@
+
+
+The Template project uses TextMeshPros default font.
+
+To create a font with TextMeshPro ask Gav to provide you with a font, I put them in the source folder
+
+Open the Window->TextMeshPro->FontAssetCreator
+
+Drag the font in, check get kerning pairs for spacing and then hit Generate.
+
+Save the font to the fonts folder which you can then drag onto TextMeshPro components.
+
+If you want to change attributes other than vertex color and point size you will have to duplicate the font before doing so 
+as other settings are on the material and will affect all components using that font.
+
+Have fun!

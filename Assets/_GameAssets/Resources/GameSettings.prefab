@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1902281036939180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4382562551804682}
+  - component: {fileID: 114746989670073264}
+  m_Layer: 0
+  m_Name: GameSettings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4382562551804682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902281036939180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114746989670073264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902281036939180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98ea521e732ca743af891967261982f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItunesAppID: 
+  AppsflyerDevKey: 
+  FlipBonusBaseScore: 5
+  PositionBonuses: 640000003200000019000000
+  SoundFX:
+  - {fileID: 8300000, guid: ee12ebe36dba4784c869557202eb3cb1, type: 3}
+  - {fileID: 8300000, guid: 283cb9bfe3c95644ca669fc4d2da0f1a, type: 3}
+  - {fileID: 8300000, guid: f3dcb3afd73256749998191a4f3103c9, type: 3}
+  - {fileID: 8300000, guid: 53f7048b4c1dea7408a3e513f3bd50d4, type: 3}
+  - {fileID: 8300000, guid: ead6b24a9d7ff37469a68a5256dbce9c, type: 3}
+  SoundOn: {fileID: 21300000, guid: b8dad80b823c2964e9750c25ddf24fc2, type: 3}
+  SoundOff: {fileID: 21300000, guid: 05d403d0091292f45a62969ca8ec48d6, type: 3}
+  HapticOn: {fileID: 21300000, guid: e6863568ac3325c4e81b1e9d129dbf2d, type: 3}
+  HapticOff: {fileID: 21300000, guid: 57eb9a7d50cd6bc4db0073f93aa1eda0, type: 3}
+  WaterMaterial: {fileID: 13400000, guid: 6a21e9d7636059a45b8b489840874706, type: 2}
+  StructureMaterial: {fileID: 13400000, guid: f1b8ee29725bfa542865fea5212a27ba, type: 2}
+  ChequerTexture: {fileID: 2800000, guid: c8cb7a4edbcc2dc4cb2cdd035e304ff1, type: 3}
+  BoatModels:
+  - {fileID: 8080884676081234989, guid: f0c524628ac84944eb9f035623772b64, type: 3}
+  - {fileID: 8080884676081234989, guid: 251b2da4d9657f64bb06993b4c7be0ec, type: 3}
+  MaxTrackDecals: 256
+  TrackDecalsPrefab: {fileID: 1675679064887444, guid: 1cc6d22c91d26b54fa16e6e4dd467aae,
+    type: 3}
+  MaxAIPlayers: 8
+  AIPlayerPrefab: {fileID: 2277756099059361283, guid: cc46eb0f8447bfe4f8dbef32ddb0ed88,
+    type: 3}
+  MaxSmokePuffs: 8
+  SmokePuffPrefab: {fileID: 5561709775022103411, guid: 229e71794286beb4584f0e9aec65b3fa,
+    type: 3}
+  MaxBonusEffects: 8
+  BonusEffectPrefab: {fileID: 1209446902205138, guid: 32c291a57310adc4a92e7a5180859679,
+    type: 3}
+  MaxProps: 128
+  PropsPrefab: {fileID: 6014841198202716, guid: 85be7168d4ab6cd4683e5d0ec92bf36f,
+    type: 3}
+  MaxEnemies: 32
+  EnemiesPrefab: {fileID: 6392130938365788843, guid: edbda2b66d868e445b4dddf74e952d03,
+    type: 3}
+  MaxPickups: 128
+  PickupsPrefab: {fileID: 4851068002502245862, guid: d52c1d92c63d64c46b94ad70a3947ce4,
+    type: 3}
+  PlayerColors:
+  - {r: 0, g: 1, b: 0.6484008, a: 1}
+  - {r: 0, g: 0.2669897, b: 1, a: 1}
+  - {r: 0.8573201, g: 0.2971698, b: 1, a: 1}
+  - {r: 1, g: 0.975, b: 0, a: 1}
+  - {r: 1, g: 0.55625, b: 0, a: 1}
+  - {r: 0.6104313, g: 1, b: 0, a: 1}
+  - {r: 0.4499998, g: 0, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.047904253, a: 1}
+  Player:
+    BoostTime: 4
+    BoostSpeedScale: 1.5
+    HitSpeedScale: 0.5
+    PerfectSpeedScale: 0.5
+    Prefab: {fileID: 2277756099059361283, guid: 3ca2892c58fdbca47a9ba528f7d3cc1a,
+      type: 3}
+    CameraOffset: {x: 0, y: 0, z: 0}
+  Levels:
+  - _: Level1
+    AIPlayerCount: 7
+    TrackPrefab: {fileID: 1780787708966526, guid: 9d535c14af984654cad1573fbfef002e,
+      type: 3}
+    ScenePrefab: {fileID: 1579708001235316, guid: 58316ebdf12feff4ca54ed1064b34903,
+      type: 3}
+  - _: Level2
+    AIPlayerCount: 7
+    TrackPrefab: {fileID: 1780787708966526, guid: 6082b27ee54131641a8456474e4cf753,
+      type: 3}
+    ScenePrefab: {fileID: 1579708001235316, guid: c7f75dc2327a51b4a9e3ee87270a79aa,
+      type: 3}
+  - _: Level3
+    AIPlayerCount: 7
+    TrackPrefab: {fileID: 1780787708966526, guid: 9d535c14af984654cad1573fbfef002e,
+      type: 3}
+    ScenePrefab: {fileID: 1579708001235316, guid: 15deacc6544bf5447b8776f158ac0672,
+      type: 3}
+  - _: Level4
+    AIPlayerCount: 7
+    TrackPrefab: {fileID: 1780787708966526, guid: d69df8c501f1dbc43804f29f85ef6dac,
+      type: 3}
+    ScenePrefab: {fileID: 1579708001235316, guid: a9fe21206f319c34a944ca84b231be39,
+      type: 3}
+  - _: Level5
+    AIPlayerCount: 7
+    TrackPrefab: {fileID: 1780787708966526, guid: 6082b27ee54131641a8456474e4cf753,
+      type: 3}
+    ScenePrefab: {fileID: 1579708001235316, guid: 2b9f90d853a277f46924ffdc1579c205,
+      type: 3}
+  - _: Level6
+    AIPlayerCount: 7
+    TrackPrefab: {fileID: 1780787708966526, guid: 9d535c14af984654cad1573fbfef002e,
+      type: 3}
+    ScenePrefab: {fileID: 1579708001235316, guid: 4fdf50250d9edcd4faa919bdcebdaafb,
+      type: 3}
+  AIPlayers:
+  - Name: Default
+    Speed: 2
+  TrackCurvePrefab: {fileID: 7380539144535994436, guid: 7c37417aebd643642984ab9a836edf77,
+    type: 3}
+  TrackCurveSegmentPrefab: {fileID: 9007256209320400487, guid: 07e29ff1b776942498f548b9d0212446,
+    type: 3}

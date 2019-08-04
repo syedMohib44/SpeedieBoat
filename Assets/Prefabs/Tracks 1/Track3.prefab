@@ -1,0 +1,280 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1780787708966526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4857696933403658}
+  - component: {fileID: 7624978241069490718}
+  - component: {fileID: 114538932164975698}
+  - component: {fileID: 114017903055478940}
+  m_Layer: 0
+  m_Name: Track3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4857696933403658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780787708966526}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7624978241069490718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780787708966526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c03d4909e2ffd143aa578691f708698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rebuild: 0
+  TrackLength: 212.71527
+  TrackData:
+    PoleCount: 32
+    CurveWidthScale: 1
+    Height: 1
+    StartLineDist: 8
+    EndLineDist: 205
+    WaterLevel: 0.065
+    WaterWidth: 1.85
+    BaseWidth: 2
+    BaseHeight: 0.01
+    WallWidth: 0.075
+    WallHeight: 0.1
+    SegmentsCount: 1024
+    Splines: {fileID: 1780787708966526}
+    StructureMaterial: {fileID: 2100000, guid: 24b41eeb02f1e684b8f1a23c72a1422c, type: 2}
+    WaterMaterial: {fileID: 2100000, guid: 6bcfc53fdabe0274f822cb32630aa5a5, type: 2}
+    WaterMaterial2: {fileID: 2100000, guid: 708029cb2cafc5d4d83af5493c9930fb, type: 2}
+    CurveMaterial: {fileID: 2100000, guid: 978d766101618884f93a7a41efeb3d4c, type: 2}
+    Curves:
+    - Side: 1
+      Start: 372
+      Length: 44
+    - Side: 1
+      Start: 684
+      Length: 40
+    Props:
+    - Type: 1
+      DistStart: 90
+    - Type: 1
+      DistStart: 140
+    - Type: 1
+      DistStart: 180
+    - Type: 2
+      DistStart: 207
+    Enemies:
+    - Type: 0
+      Start: 0
+      Count: 1
+      DistStart: 28
+      ActivateInterval: 0.33
+      ForwardSpeed: 0.5
+      LateralTime: 8
+    - Type: 0
+      Start: 0
+      Count: 1
+      DistStart: 75
+      ActivateInterval: 0.33
+      ForwardSpeed: 0.5
+      LateralTime: 8
+    - Type: 0
+      Start: 0
+      Count: 1
+      DistStart: 130
+      ActivateInterval: 0.33
+      ForwardSpeed: 0.5
+      LateralTime: 8
+    - Type: 0
+      Start: 0
+      Count: 1
+      DistStart: 200
+      ActivateInterval: 0.33
+      ForwardSpeed: 0.5
+      LateralTime: 8
+    PickupSpawners:
+    - Type: 0
+      Start: 0
+      Count: 5
+      DistStart: 20
+      ActivateInterval: 1
+      ForwardSpeed: 0.1
+      LateralTime: 4
+--- !u!114 &114538932164975698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780787708966526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d20671ad38ded4fa2362df353b9a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showHandles: 1
+  hidden: 0
+  parent: {fileID: 0}
+  ccName: 
+  fields: 3
+  mathType: 0
+  sectionParts: 100
+  optimizeStraightLines: 0
+  tolerance: 0.2
+  usePositionToCalculateTangents: 0
+  updateMode: 0
+  rendererForUpdateCheck: {fileID: 0}
+  mathChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: BansheeGz.BGSpline.Components.BGCcMath+MathChangedEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  spheresScale: 0.5
+  spheresColor: {r: 1, g: 1, b: 1, a: 1}
+  spheresCount: 100
+--- !u!114 &114017903055478940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780787708966526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70f079e2a6bf364e8185b765fbe61c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    hideHandles: 0
+    newPointDistance: 2
+    showCurve: 1
+    showCurveMode: 1
+    showCurveOption: 0
+    sections: 20
+    showPointMenu: 1
+    showTangents: 0
+    tangentsSize: 0.7
+    tangentsColor: {r: 1, g: 1, b: 1, a: 1}
+    tangentsPerSection: 1
+    controlType: 1
+    vRay: 0
+    lineColor: {r: 1, g: 0, b: 0, a: 1}
+    restrictGizmoz: 
+    showPointControlType: 1
+    showPointPosition: 1
+    showHandles: 1
+    handlesType: 0
+    handlesSettings:
+      RemoveX: 0
+      RemoveY: 0
+      RemoveZ: 0
+      RemoveXZ: 0
+      RemoveXY: 0
+      RemoveYZ: 0
+      AxisScale: 1
+      PlanesScale: 1
+      Alpha: 1
+    showLabels: 1
+    labelColor: {r: 1, g: 1, b: 1, a: 1}
+    showPositions: 0
+    labelColorSelected: {r: 0, g: 1, b: 0, a: 1}
+    showSpheres: 1
+    sphereRadius: 0.1
+    sphereColor: {r: 1, g: 0, b: 0, a: 1}
+    showPointControlPositions: 1
+    showControlHandles: 1
+    controlHandlesType: 0
+    controlHandlesSettings:
+      RemoveX: 0
+      RemoveY: 0
+      RemoveZ: 0
+      RemoveXZ: 0
+      RemoveXY: 0
+      RemoveYZ: 0
+      AxisScale: 0.7
+      PlanesScale: 0.7
+      Alpha: 0.7
+    controlHandlesColor: {r: 0, g: 1, b: 1, a: 1}
+    showControlLabels: 1
+    showControlPositions: 0
+    labelControlColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    showTransformField: 0
+    existing: 1
+  mode2D: 0
+  closed: 0
+  points:
+  - controlType: 1
+    positionLocal: {x: -118.09723, y: 0.17330793, z: 37.96549}
+    controlFirstLocal: {x: -0.722229, y: 0.01357998, z: 3.0629768}
+    controlSecondLocal: {x: 0.722229, y: -0.01357998, z: -3.0629768}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -102.99693, y: 0, z: 5.3404846}
+    controlFirstLocal: {x: -15.794952, y: 0.1155386, z: 8.500641}
+    controlSecondLocal: {x: 15.794952, y: -0.1155386, z: -8.500641}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -101.16402, y: -0.7800274, z: -33.67151}
+    controlFirstLocal: {x: -9.6560135, y: 0.30937958, z: -0.07397461}
+    controlSecondLocal: {x: 9.6560135, y: -0.30937958, z: 0.07397461}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -79.353355, y: -0.4691286, z: -11.824406}
+    controlFirstLocal: {x: -9.259338, y: -0.2535782, z: -0.01102829}
+    controlSecondLocal: {x: 9.259338, y: 0.2535782, z: 0.01102829}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -56.245613, y: 1.6241026, z: -16.058693}
+    controlFirstLocal: {x: -9.556374, y: 0.021504402, z: -13.258152}
+    controlSecondLocal: {x: 9.556374, y: -0.021504402, z: 13.258152}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  - controlType: 1
+    positionLocal: {x: -79.11613, y: 0.23924446, z: 36.35305}
+    controlFirstLocal: {x: -33.39602, y: 0.06510353, z: -29.164867}
+    controlSecondLocal: {x: 33.39602, y: -0.06510353, z: 29.164867}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 114017903055478940}
+    fieldsValues: []
+  pointsComponents: []
+  pointsGameObjects: []
+  fields: []
+  snapType: 0
+  snapAxis: 1
+  snapDistance: 10
+  snapLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  snapTriggerInteraction: 0
+  snapToBackFaces: 0
+  snapMonitoring: 0
+  eventMode: 0
+  pointsMode: 0
+  forceChangedEventMode: 0

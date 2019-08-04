@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{723933D1-99B2-170E-B01E-5A19B289B355}|">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Git_SpeedyBoat_Cloned" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="_GameAssets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Game" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="GoogleMobileAds" expanded="True">
+                <Node name="Api" expanded="True" />
+                <Node name="Editor" expanded="True" />
+              </Node>
+              <Node name="UnityAds" expanded="True">
+                <Node name="Intestitial.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
