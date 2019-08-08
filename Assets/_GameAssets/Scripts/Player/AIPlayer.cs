@@ -45,7 +45,7 @@ namespace SpeedyBoat
 
             var playerLateralWidth = playerWidth / trackWidth * 2;
 
-            var LateralLimits = new Vector2(-2f, 2f); //-.9, .9
+            var LateralLimits = new Vector2(-.9f, .9f); //-.9, .9
 
             var baseVelocity = m_boat.MaxSpeed * AISpeedScale;
             if (isDestroed == false)

@@ -1,19 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>4</LangVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{723933D1-99B2-170E-B01E-5A19B289B355}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -27,6 +29,7 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,6 +39,7 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -53,746 +57,746 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_GameAssets\Data\GameSettings.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Boats\Boat.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\CameraManager.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Effects\AttractedCoinsEffect.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Effects\ParticleEffect.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Effects\PickupAttractedCoinsEffect.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Enemies\DuckEnemy.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Enemies\DuckEnemyInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Enemies\Enemies.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Enemies\Enemy.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Enemies\EnemyInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Extensions\Extensions.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\FBDummyClass.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\GADummyClass.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Game\FaceCam.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Game\FlipBonus.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Game\Game.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Game\GameSettings.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Game\Level.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\HSBColor.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Main.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\ObjectPool.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\ObsticlePopUp.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Pickups\CoinPickup.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Pickups\CoinPickupInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Pickups\Pickup.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Pickups\PickupInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Pickups\Pickups.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\CheatJumpPlayerAction.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\CheatJumpPlayerActionInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\DrivePlayerAction.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\DrivePlayerActionInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\EnterPlayerAction.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\EnterPlayerActionInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\FallPlayerAction.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\FallPlayerActionInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\FlipJumpPlayerAction.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\FlipJumpPlayerActionInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\JumpPlayerAction.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\JumpPlayerActionInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\LevelJumpPlayerAction.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\LevelJumpPlayerActionInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\PlayerAction.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\PlayerActionInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\SinkPlayerAction.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\SinkPlayerActionInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\UpgradePlayerAction.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\UpgradePlayerActionInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\AIPlayer.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\HumanPlayer.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\HumanPlayer_Physics.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\Player.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Player\PlayerData.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\CheatRampProp.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\CheatRampPropInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\JumpRampProp.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\JumpRampPropInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\LevelJumpRampProp.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\LevelJumpRampPropInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\PostProp.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\PostPropInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\Prop.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\PropInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\Props.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\RampProp.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Props\RampPropInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Track\Curves\TrackCurve.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Track\Curves\TrackCurveSegment.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Track\Decals\ChequerTrackDecal.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Track\Decals\TrackDecal.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Track\Decals\TrackDecals.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Track\Decals\WakeTrackDecal.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Track\SplineInterface.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Track\Track.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Track\TrackBuilder.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Track\TrackDetails.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Types\BoostType.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Types\EnemyType.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Types\PickupType.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Types\PlayerActionType.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Types\PropType.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Types\SoundFXType.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\Types\TrackDecalType.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\GameOptions.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\Tutorial.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIManager.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\GameOverPanel.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\GamePanel.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\HomePanel.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\LevelCompletePanel.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\PanelInitialisers\GameOverPanelInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\PanelInitialisers\GamePanelInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\PanelInitialisers\HomePanelInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\PanelInitialisers\LevelCompletePanelInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\PanelInitialisers\UIPanelInitialiser.cs" />
-     <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\UIPanel.cs" />
-     <Compile Include="Assets\AppsFlyer\Plugins\AFInAppEvents.cs" />
-     <Compile Include="Assets\AppsFlyer\Plugins\AppsFlyer.cs" />
-     <Compile Include="Assets\AppsFlyer\Plugins\AppsFlyerTrackerCallbacks.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCamera.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCcChangeCursorLinear.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveChange.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveClosestPoint.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveDynamic.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveMath.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveRuntime.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveRuntimeCustomFields.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveShowcase.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveSnapping.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveStatic.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestDirector.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestMainMenu.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestPerformance.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcCursor.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcCursorChangeLinear.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcCursorObjectRotate.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcCursorObjectScale.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcCursorObjectTranslate.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcMath.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcSplitterPolyline.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcSweep2D.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcTriangulate2D.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcTrs.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcVisualizationLineRenderer.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcWithCursor.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcWithCursorObject.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcWithMath.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGPolylineSplitter.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGPpu.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGTriangulator2D.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCc.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurve.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveAdaptiveMath.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveBaseMath.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveCalculatorClosestPoint.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveChangedArgs.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveFormulaMath.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveFormulas.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveMathI.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePoint.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePointComponent.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePointField.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePointGO.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePointI.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveReferenceToPoint.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveSettings.cs" />
-     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGReflectionAdapter.cs" />
-     <Compile Include="Assets\Exploder\Benchmark\Benchmark.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\CursorLocking.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\ExploderMouseLook.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\GrenadeController.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\GrenadeObject.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\MoveController.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\PanelChairBomb.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\PanelResetScene.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\PanelThrowObject.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\RobotScript.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\Rocket.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\RPGController.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\ShotgunController.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\TargetManager.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\ThrowObject.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\UseObject.cs" />
-     <Compile Include="Assets\Exploder\Demo\Scripts\WeaponManager.cs" />
-     <Compile Include="Assets\Exploder\DemoClickExplode\DemoClickExplode.cs" />
-     <Compile Include="Assets\Exploder\DemoClickExplode\DemoClickPartialExplode.cs" />
-     <Compile Include="Assets\Exploder\DemoClickExplode\DemoSelfExplode.cs" />
-     <Compile Include="Assets\Exploder\DemoSimple\DemoSimple.cs" />
-     <Compile Include="Assets\Exploder\Examples\ExplodeAllObjects.cs" />
-     <Compile Include="Assets\Exploder\Examples\HowToGetActiveFragments.cs" />
-     <Compile Include="Assets\Exploder\Examples\QuickStart.cs" />
-     <Compile Include="Assets\Exploder\Examples\TweenFragment.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Array.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\ArrayDictionary.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\BakeSkinManager.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Contour.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Core.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\CrackedObject.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\CrackManager.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\CuttingPlane.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\ExploderQueue.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\ExploderTransform.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\FractureGrid.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\LSHash.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Mesh.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\MeshCutter.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\MeshObject.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\MeshUtils.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Plane.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Polygon.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Tasks\CutterMT.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Tasks\CutterST.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Tasks\CutterWorker.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Tasks\ExploderTask.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Tasks\IsolateMeshIslands.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Tasks\Postprocess.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Tasks\PostprocessCrack.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Tasks\PostprocessExplode.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Core\Tasks\Preprocess.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Explodable.cs" />
-     <Compile Include="Assets\Exploder\Exploder\ExploderObject.cs" />
-     <Compile Include="Assets\Exploder\Exploder\ExploderOption.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Fragments\Fragment.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Fragments\FragmentDeactivation.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Fragments\FragmentOptions.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Fragments\FragmentPool.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Fragments\FragmentSFX.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Utils\Compatibility.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Utils\ExploderProfiler.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Utils\ExploderSingleton.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Utils\ExploderSlowMotion.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Utils\ExploderUtils.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Utils\HUDFPS.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Utils\Hull2D.cs" />
-     <Compile Include="Assets\Exploder\Exploder\Utils\SingletonTemplate.cs" />
-     <Compile Include="Assets\Exploder\Playmaker\CrackObjectAction.cs" />
-     <Compile Include="Assets\Exploder\Playmaker\CrackRadiusAction.cs" />
-     <Compile Include="Assets\Exploder\Playmaker\ExplodeCrackedAction.cs" />
-     <Compile Include="Assets\Exploder\Playmaker\ExplodeObjectAction.cs" />
-     <Compile Include="Assets\Exploder\Playmaker\ExplodeRadiusAction.cs" />
-     <Compile Include="Assets\Exploder\Tests\DestroyedObject_Test.cs" />
-     <Compile Include="Assets\Exploder\Tests\ExploderTester.cs" />
-     <Compile Include="Assets\Exploder\Tests\FragmentCountTest.cs" />
-     <Compile Include="Assets\Exploder\Tests\FragmentCountTestMultiple.cs" />
-     <Compile Include="Assets\Exploder\Tests\FragmentCrackCountTest.cs" />
-     <Compile Include="Assets\Exploder\Tests\TestCase.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdapterStatus.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdErrorEventArgs.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdLoader.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdPosition.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdRequest.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\AdSize.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\BannerView.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeEventArgs.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeTemplateAd.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\Gender.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\InterstitialAd.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\Mediation\AppLovin\AppLovin.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\Mediation\MediationExtras.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\Mediation\UnityAds\UnityAds.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\MobileAds.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\Reward.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\RewardBasedVideoAd.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Api\RewardedAd.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\DummyClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\IAdLoaderClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\IBannerClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\ICustomNativeTemplateClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\IInterstitialClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\IMobileAdsClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\IRewardBasedVideoAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\IRewardedAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\Mediation\AppLovin\DummyClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\Mediation\AppLovin\IAppLovinClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\Mediation\UnityAds\DummyClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\Mediation\UnityAds\IUnityAdsClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\MobileAdsEventExecutor.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\RewardedAdDummyClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Common\Utils.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\AdLoaderClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\BannerClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\CustomNativeTemplateClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\InterstitialClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Mediation\AppLovin\AppLovinClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Mediation\UnityAds\UnityAdsClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\MobileAdsClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RewardBasedVideoAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RewardedAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Utils.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\GoogleMobileAdsClientFactory.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\AdLoaderClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\BannerClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\CustomNativeTemplateClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Externs.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\InterstitialClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\AppLovin\AppLovinClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\AppLovin\Externs.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\UnityAds\Externs.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\UnityAds\UnityAdsClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\MobileAdsClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RewardBasedVideoAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RewardedAdClient.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Utils.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Mediation\AppLovinClientFactory.cs" />
-     <Compile Include="Assets\GoogleMobileAds\Platforms\Mediation\UnityAdsClientFactory.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
-     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
-     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\CSG\CSG.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\CSG\CSGNode.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\CSG\CSGPlane.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\CSG\CSGPolygon.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\CSG\CSGVertex.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\CSG\VertexHash.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Demo\ButtonTrigger.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Demo\CutterDemo.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Demo\CutterTest.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Demo\PrimitivesDemo.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Arc.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\ArcGizmo.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\BaseObject.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\BooleanOp.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Box.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Capsule.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Circle.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Cone.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\CuttingPlane.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Cylinder.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\DefaultObject.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Ellipse.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Ellipsoid.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\GeoSphere.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Helix.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\MeshEditorObject.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\PlaneObject.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Pyramid.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Ring.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\RoundedCube.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Sphere.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\SphericalCone.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\SuperEllispoid.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Torus.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\TorusKnot.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Triangle.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Tube.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\ArrayDictionary.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\Contour.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\IntersectionData.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\LSHash.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\MeshCutter.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\Polygon.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\MeshEditor\PPMesh.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\MeshEditor\UndoSystem.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\ArcPrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\BoxPrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\CapsulePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\ConePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\EllipsePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\EllipsoidPrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\GeoSpherePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\HelixPrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\HollowConePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\PlanePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\PrimitivePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\PyramidPrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\RingPrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\SpherePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\SphericalConePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\SuperEllipsoidPrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\TorusKnotPrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\TorusPrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\TrianglePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\TubePrimitive.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Utils\ObjExporter.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Utils\Plane.cs" />
-     <Compile Include="Assets\PrimitivesPro\Scripts\Utils\Utils.cs" />
-     <Compile Include="Assets\SplineMesh\Scripts\Bezier\CubicBezierCurve.cs" />
-     <Compile Include="Assets\SplineMesh\Scripts\Bezier\MeshBender.cs" />
-     <Compile Include="Assets\SplineMesh\Scripts\Bezier\Spline.cs" />
-     <Compile Include="Assets\SplineMesh\Scripts\Bezier\SplineNode.cs" />
-     <Compile Include="Assets\TapticPlugin\Plugins\TapticManager.cs" />
-     <Compile Include="Assets\UnityAds\BannerAds.cs" />
-     <Compile Include="Assets\UnityAds\Interstitial.cs" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
-     <None Include="Assets\_GameAssets\Fonts\Font Creation Info.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
-     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
-     <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
-     <None Include="Assets\Exploder\Demo\Shaders\VertexColor.shader" />
-     <None Include="Assets\Lowpoly paper boats\doc\readme.txt" />
-     <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
-     <None Include="Assets\_GameAssets\Shaders\Normal-Diffuse-NoFog.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\BansheeGz\BGCurve\readme.txt" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
-     <None Include="Assets\Exploder\Exploder\3rd\P2T.txt" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
-     <None Include="Assets\SplineMesh\Doc.txt" />
-     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AIModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ARModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AccessibilityModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AnimationModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AssetBundleModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AudioModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.BaselibModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ClothModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.CoreModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.CrashReportingModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.DirectorModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.FileSystemHttpModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GameCenterModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GridModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HotReloadModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.IMGUIModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ImageConversionModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.InputModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.JSONSerializeModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.LocalizationModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ParticleSystemModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.PerformanceReportingModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.PhysicsModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Physics2DModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ProfilerModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ScreenCaptureModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SharedInternalsModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpatialTrackingModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpriteMaskModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpriteShapeModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.StreamingModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.StyleSheetsModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SubstanceModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TLSModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TerrainModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TerrainPhysicsModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TextCoreModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TextRenderingModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TilemapModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TimelineModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UIModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UIElementsModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UNETModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UmbraModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityAnalyticsModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityConnectModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityTestProtocolModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestAudioModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestTextureModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestWWWModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VFXModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VRModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VehiclesModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VideoModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.WindModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.XRModule">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Locator">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="nunit.framework">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Timeline">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="Vuforia.UnityExtensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GoogleAudioSpatializer">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
- </Reference>
- <Reference Include="P2T">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Assets/PrimitivesPro/Scripts/Triangulation/P2T.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Advertisements.Editor">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.Editor">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.Tracker">
- <HintPath>D:/Git_SpeedyBoat_Cloned/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
- </Reference>
- <Reference Include="mscorlib">
- <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
- </Reference>
- <Reference Include="System">
- <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
- </Reference>
- <Reference Include="System.Core">
- <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Serialization">
- <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml">
- <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.Linq">
- <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
- </Reference>
- <Reference Include="UnityScript">
- <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
- </Reference>
- <Reference Include="UnityScript.Lang">
- <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
- </Reference>
- <Reference Include="Boo.Lang">
- <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\_GameAssets\Data\GameSettings.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Boats\Boat.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\CameraManager.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Effects\AttractedCoinsEffect.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Effects\ParticleEffect.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Effects\PickupAttractedCoinsEffect.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Enemies\DuckEnemy.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Enemies\DuckEnemyInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Enemies\Enemies.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Enemies\Enemy.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Enemies\EnemyInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Extensions\Extensions.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\FBDummyClass.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\GADummyClass.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Game\FaceCam.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Game\FlipBonus.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Game\Game.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Game\GameSettings.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Game\Level.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\HSBColor.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Main.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\ObjectPool.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\ObsticlePopUp.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Pickups\CoinPickup.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Pickups\CoinPickupInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Pickups\Pickup.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Pickups\PickupInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Pickups\Pickups.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\CheatJumpPlayerAction.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\CheatJumpPlayerActionInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\DrivePlayerAction.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\DrivePlayerActionInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\EnterPlayerAction.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\EnterPlayerActionInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\FallPlayerAction.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\FallPlayerActionInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\FlipJumpPlayerAction.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\FlipJumpPlayerActionInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\JumpPlayerAction.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\JumpPlayerActionInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\LevelJumpPlayerAction.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\LevelJumpPlayerActionInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\PlayerAction.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\PlayerActionInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\SinkPlayerAction.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\SinkPlayerActionInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\UpgradePlayerAction.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Actions\UpgradePlayerActionInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\AIPlayer.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\HumanPlayer.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\HumanPlayer_Physics.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Player\PlayerData.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\CheatRampProp.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\CheatRampPropInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\JumpRampProp.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\JumpRampPropInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\LevelJumpRampProp.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\LevelJumpRampPropInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\PostProp.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\PostPropInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\Prop.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\PropInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\Props.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\RampProp.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Props\RampPropInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Track\Curves\TrackCurve.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Track\Curves\TrackCurveSegment.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Track\Decals\ChequerTrackDecal.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Track\Decals\TrackDecal.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Track\Decals\TrackDecals.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Track\Decals\WakeTrackDecal.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Track\SplineInterface.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Track\Track.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Track\TrackBuilder.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Track\TrackDetails.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Types\BoostType.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Types\EnemyType.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Types\PickupType.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Types\PlayerActionType.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Types\PropType.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Types\SoundFXType.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Types\TrackDecalType.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\GameOptions.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\Tutorial.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIManager.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\GameOverPanel.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\GamePanel.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\HomePanel.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\LevelCompletePanel.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\PanelInitialisers\GameOverPanelInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\PanelInitialisers\GamePanelInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\PanelInitialisers\HomePanelInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\PanelInitialisers\LevelCompletePanelInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\PanelInitialisers\UIPanelInitialiser.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\UIPanels\UIPanel.cs" />
+    <Compile Include="Assets\AppsFlyer\Plugins\AFInAppEvents.cs" />
+    <Compile Include="Assets\AppsFlyer\Plugins\AppsFlyer.cs" />
+    <Compile Include="Assets\AppsFlyer\Plugins\AppsFlyerTrackerCallbacks.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCamera.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCcChangeCursorLinear.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveChange.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveClosestPoint.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveDynamic.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveMath.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveRuntime.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveRuntimeCustomFields.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveShowcase.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveSnapping.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestCurveStatic.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestDirector.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestMainMenu.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Examples\Scripts\BGTestPerformance.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcCursor.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcCursorChangeLinear.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcCursorObjectRotate.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcCursorObjectScale.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcCursorObjectTranslate.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcMath.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcSplitterPolyline.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcSweep2D.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcTriangulate2D.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcTrs.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcVisualizationLineRenderer.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcWithCursor.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcWithCursorObject.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGCcWithMath.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGPolylineSplitter.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGPpu.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Cc\BGTriangulator2D.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCc.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurve.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveAdaptiveMath.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveBaseMath.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveCalculatorClosestPoint.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveChangedArgs.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveFormulaMath.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveFormulas.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveMathI.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePoint.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePointComponent.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePointField.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePointGO.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePointI.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveReferenceToPoint.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveSettings.cs" />
+    <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGReflectionAdapter.cs" />
+    <Compile Include="Assets\Exploder\Benchmark\Benchmark.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\CursorLocking.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\ExploderMouseLook.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\GrenadeController.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\GrenadeObject.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\MoveController.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\PanelChairBomb.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\PanelResetScene.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\PanelThrowObject.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\RobotScript.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\Rocket.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\RPGController.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\ShotgunController.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\TargetManager.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\ThrowObject.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\UseObject.cs" />
+    <Compile Include="Assets\Exploder\Demo\Scripts\WeaponManager.cs" />
+    <Compile Include="Assets\Exploder\DemoClickExplode\DemoClickExplode.cs" />
+    <Compile Include="Assets\Exploder\DemoClickExplode\DemoClickPartialExplode.cs" />
+    <Compile Include="Assets\Exploder\DemoClickExplode\DemoSelfExplode.cs" />
+    <Compile Include="Assets\Exploder\DemoSimple\DemoSimple.cs" />
+    <Compile Include="Assets\Exploder\Examples\ExplodeAllObjects.cs" />
+    <Compile Include="Assets\Exploder\Examples\HowToGetActiveFragments.cs" />
+    <Compile Include="Assets\Exploder\Examples\QuickStart.cs" />
+    <Compile Include="Assets\Exploder\Examples\TweenFragment.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Array.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\ArrayDictionary.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\BakeSkinManager.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Contour.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Core.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\CrackedObject.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\CrackManager.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\CuttingPlane.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\ExploderQueue.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\ExploderTransform.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\FractureGrid.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\LSHash.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Mesh.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\MeshCutter.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\MeshObject.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\MeshUtils.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Plane.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Polygon.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Tasks\CutterMT.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Tasks\CutterST.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Tasks\CutterWorker.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Tasks\ExploderTask.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Tasks\IsolateMeshIslands.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Tasks\Postprocess.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Tasks\PostprocessCrack.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Tasks\PostprocessExplode.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Core\Tasks\Preprocess.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Explodable.cs" />
+    <Compile Include="Assets\Exploder\Exploder\ExploderObject.cs" />
+    <Compile Include="Assets\Exploder\Exploder\ExploderOption.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Fragments\Fragment.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Fragments\FragmentDeactivation.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Fragments\FragmentOptions.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Fragments\FragmentPool.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Fragments\FragmentSFX.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Utils\Compatibility.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Utils\ExploderProfiler.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Utils\ExploderSingleton.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Utils\ExploderSlowMotion.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Utils\ExploderUtils.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Utils\HUDFPS.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Utils\Hull2D.cs" />
+    <Compile Include="Assets\Exploder\Exploder\Utils\SingletonTemplate.cs" />
+    <Compile Include="Assets\Exploder\Playmaker\CrackObjectAction.cs" />
+    <Compile Include="Assets\Exploder\Playmaker\CrackRadiusAction.cs" />
+    <Compile Include="Assets\Exploder\Playmaker\ExplodeCrackedAction.cs" />
+    <Compile Include="Assets\Exploder\Playmaker\ExplodeObjectAction.cs" />
+    <Compile Include="Assets\Exploder\Playmaker\ExplodeRadiusAction.cs" />
+    <Compile Include="Assets\Exploder\Tests\DestroyedObject_Test.cs" />
+    <Compile Include="Assets\Exploder\Tests\ExploderTester.cs" />
+    <Compile Include="Assets\Exploder\Tests\FragmentCountTest.cs" />
+    <Compile Include="Assets\Exploder\Tests\FragmentCountTestMultiple.cs" />
+    <Compile Include="Assets\Exploder\Tests\FragmentCrackCountTest.cs" />
+    <Compile Include="Assets\Exploder\Tests\TestCase.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdapterStatus.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdErrorEventArgs.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdLoader.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdPosition.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdRequest.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdSize.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\BannerView.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeEventArgs.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeTemplateAd.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\Gender.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\InterstitialAd.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\Mediation\AppLovin\AppLovin.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\Mediation\MediationExtras.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\Mediation\UnityAds\UnityAds.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\MobileAds.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\Reward.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\RewardBasedVideoAd.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\RewardedAd.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\DummyClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IAdLoaderClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IBannerClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\ICustomNativeTemplateClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IInterstitialClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IMobileAdsClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IRewardBasedVideoAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IRewardedAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\Mediation\AppLovin\DummyClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\Mediation\AppLovin\IAppLovinClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\Mediation\UnityAds\DummyClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\Mediation\UnityAds\IUnityAdsClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\MobileAdsEventExecutor.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\RewardedAdDummyClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\Utils.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\AdLoaderClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\BannerClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\CustomNativeTemplateClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\InterstitialClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Mediation\AppLovin\AppLovinClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Mediation\UnityAds\UnityAdsClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\MobileAdsClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RewardBasedVideoAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RewardedAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Utils.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\GoogleMobileAdsClientFactory.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\AdLoaderClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\BannerClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\CustomNativeTemplateClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Externs.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\InterstitialClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\AppLovin\AppLovinClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\AppLovin\Externs.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\UnityAds\Externs.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\UnityAds\UnityAdsClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\MobileAdsClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RewardBasedVideoAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RewardedAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Utils.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Mediation\AppLovinClientFactory.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Mediation\UnityAdsClientFactory.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\CSG\CSG.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\CSG\CSGNode.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\CSG\CSGPlane.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\CSG\CSGPolygon.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\CSG\CSGVertex.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\CSG\VertexHash.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Demo\ButtonTrigger.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Demo\CutterDemo.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Demo\CutterTest.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Demo\PrimitivesDemo.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Arc.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\ArcGizmo.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\BaseObject.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\BooleanOp.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Box.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Capsule.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Circle.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Cone.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\CuttingPlane.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Cylinder.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\DefaultObject.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Ellipse.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Ellipsoid.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\GeoSphere.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Helix.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\MeshEditorObject.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\PlaneObject.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Pyramid.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Ring.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\RoundedCube.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Sphere.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\SphericalCone.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\SuperEllispoid.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Torus.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\TorusKnot.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Triangle.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\GameObjects\Tube.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\ArrayDictionary.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\Contour.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\IntersectionData.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\LSHash.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\MeshCutter.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\MeshCutting\Polygon.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\MeshEditor\PPMesh.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\MeshEditor\UndoSystem.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\ArcPrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\BoxPrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\CapsulePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\ConePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\EllipsePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\EllipsoidPrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\GeoSpherePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\HelixPrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\HollowConePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\PlanePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\PrimitivePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\PyramidPrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\RingPrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\SpherePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\SphericalConePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\SuperEllipsoidPrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\TorusKnotPrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\TorusPrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\TrianglePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Primitives\TubePrimitive.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Utils\ObjExporter.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Utils\Plane.cs" />
+    <Compile Include="Assets\PrimitivesPro\Scripts\Utils\Utils.cs" />
+    <Compile Include="Assets\SplineMesh\Scripts\Bezier\CubicBezierCurve.cs" />
+    <Compile Include="Assets\SplineMesh\Scripts\Bezier\MeshBender.cs" />
+    <Compile Include="Assets\SplineMesh\Scripts\Bezier\Spline.cs" />
+    <Compile Include="Assets\SplineMesh\Scripts\Bezier\SplineNode.cs" />
+    <Compile Include="Assets\TapticPlugin\Plugins\TapticManager.cs" />
+    <Compile Include="Assets\UnityAds\BannerAds.cs" />
+    <Compile Include="Assets\UnityAds\Interstitial.cs" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\_GameAssets\Fonts\Font Creation Info.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\Exploder\Demo\Shaders\VertexColor.shader" />
+    <None Include="Assets\Lowpoly paper boats\doc\readme.txt" />
+    <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\_GameAssets\Shaders\Normal-Diffuse-NoFog.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\BansheeGz\BGCurve\readme.txt" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\Exploder\Exploder\3rd\P2T.txt" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\SplineMesh\Doc.txt" />
+    <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTrackingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="P2T">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Assets/PrimitivesPro/Scripts/Triangulation/P2T.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>D:/Git_SpeedyBoat_Cloned/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -802,5 +806,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

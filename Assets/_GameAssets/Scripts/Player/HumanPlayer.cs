@@ -146,7 +146,7 @@ namespace SpeedyBoat
         {
             base.Update();
 
-            if(Game.Mode != Game.GameMode.LevelComplete && TravelDist > Game.Level.FinishLineDist)
+            if (Game.Mode != Game.GameMode.LevelComplete && TravelDist > Game.Level.FinishLineDist)
             {
                 Game.OnLevelComplete();
             }
@@ -160,7 +160,7 @@ namespace SpeedyBoat
 
 
 #if UNITY_EDITOR
-            if(Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 m_boat.Explode();
             }
@@ -263,10 +263,10 @@ namespace SpeedyBoat
                 SpeedScale = Mathf.MoveTowards(SpeedScale, m_boostTime > 0 ? GameSettings.Instance().Player.BoostSpeedScale : 1, Time.deltaTime);
             }
 
-            if (allowInput && Game.Mode != Game.GameMode.Demo && Input.GetMouseButton(0))
+            if (allowInput && Game.Mode != Game.GameMode.Demo && Input.GetMouseButton(0) && !popUpCol)
             {
                 Velocity = Mathf.Min(m_boat.MaxSpeed, Velocity + m_boat.Acceleration * Time.deltaTime);
-                
+
                 //Updated by Syed Mohib
                 if (Velocity > 6)
                     Velocity = 6;
@@ -316,16 +316,16 @@ namespace SpeedyBoat
             var noFalling = Game.Level.Index <= 1;
             var offTrack = !noFalling && !isExtended && (SpeedNormal >= 1 && (m_lateralAbs < lateralLmits.x || m_lateralAbs > lateralLmits.y));
 
-            if(offTrack)
+            if (offTrack)
             {
-                if(m_offTrackTimer <= 0)
+                if (m_offTrackTimer <= 0)
                 {
                     m_offTrackTimer = OffTrackTime;
                 }
                 else
                 {
                     m_offTrackTimer -= Time.deltaTime;
-                    if(m_offTrackTimer <= 0)
+                    if (m_offTrackTimer <= 0)
                     {
                         ChangeAction(PlayerActionType.Fall, new FallPlayerActionInitialiser(LateralNormal, Game.Level.GroundHeight));
                     }
@@ -344,14 +344,19 @@ namespace SpeedyBoat
 
         private void OnCollisionEnter(Collision collision)
         {
-            if(gameObject.activeInHierarchy && collision.gameObject.activeInHierarchy)
+            if (gameObject.activeInHierarchy && collision.gameObject.activeInHierarchy)
             {
                 //Updated by Syed Mohib...
-                if(collision.gameObject.layer == LayerMask.NameToLayer("Pickup"))
+                if (collision.gameObject.layer == LayerMask.NameToLayer("Pickup"))
                 {
                     OnPickupCollision(collision.gameObject.GetComponent<Pickup>());
                 }
-                else if(collision.gameObject.layer == LayerMask.NameToLayer("Prop"))
+                else if (collision.gameObject.layer == LayerMask.NameToLayer("popUp"))
+                {
+                    popUpCol = true;
+                    Debug.Log("Hit with player");
+                }
+                else if (collision.gameObject.layer == LayerMask.NameToLayer("Prop"))
                 {
                     OnPropCollision(collision.gameObject.GetComponent<Prop>());
                 }
@@ -370,7 +375,7 @@ namespace SpeedyBoat
 
         private void OnPropCollision(Prop prop)
         {
-            switch(prop.Type)
+            switch (prop.Type)
             {
                 case PropType.JumpRamp:
                 case PropType.StaticJumpRamp:
@@ -527,8 +532,7 @@ namespace SpeedyBoat
             }
         }
 
-
-
         private AudioSource m_audioSource;
+        private bool popUpCol;
     }
 }
