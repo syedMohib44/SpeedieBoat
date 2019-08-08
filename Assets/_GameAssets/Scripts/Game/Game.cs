@@ -216,7 +216,7 @@ namespace SpeedyBoat
         public void OnLevelComplete()
         {
             ChangeMode(GameMode.LevelComplete);
-            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, Application.version, levelNo);
+            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, Application.version, Score);
         }
 
 
