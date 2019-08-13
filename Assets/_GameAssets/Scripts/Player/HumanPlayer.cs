@@ -263,7 +263,7 @@ namespace SpeedyBoat
                 SpeedScale = Mathf.MoveTowards(SpeedScale, m_boostTime > 0 ? GameSettings.Instance().Player.BoostSpeedScale : 1, Time.deltaTime);
             }
 
-            if (allowInput && Game.Mode != Game.GameMode.Demo && Input.GetMouseButton(0) && !popUpCol)
+            if (allowInput && Game.Mode != Game.GameMode.Demo && Input.GetMouseButton(0))
             {
                 Velocity = Mathf.Min(m_boat.MaxSpeed, Velocity + m_boat.Acceleration * Time.deltaTime);
 
@@ -283,7 +283,12 @@ namespace SpeedyBoat
                     Velocity = Mathf.Max(0, Velocity - m_boat.Decceleration * Time.deltaTime);
                 }
             }
-
+            if (popUpCol)
+            {
+                Velocity = 0;
+                Velocity = Mathf.Max(-5, Velocity - m_boat.Decceleration * Time.deltaTime * 10);
+                popUpCol = false;
+            }
             TravelDist += Velocity * SpeedScale * Time.deltaTime;
         }
 
@@ -351,11 +356,6 @@ namespace SpeedyBoat
                 {
                     OnPickupCollision(collision.gameObject.GetComponent<Pickup>());
                 }
-                else if (collision.gameObject.layer == LayerMask.NameToLayer("popUp"))
-                {
-                    popUpCol = true;
-                    Debug.Log("Hit with player");
-                }
                 else if (collision.gameObject.layer == LayerMask.NameToLayer("Prop"))
                 {
                     OnPropCollision(collision.gameObject.GetComponent<Prop>());
@@ -367,6 +367,11 @@ namespace SpeedyBoat
                     {
                         OnEnemyCollision(enemy);
                     }
+                }
+                if (collision.gameObject.layer == LayerMask.NameToLayer("popUp"))
+                {
+                    popUpCol = true;
+                    Debug.Log("Hit with player");
                 }
             }
         }

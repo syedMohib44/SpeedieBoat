@@ -59,13 +59,14 @@ namespace SpeedyBoat
             {
                 Game.ShowHoldFlip();
             }
+            Game.ApplyFlipBonus(transform.position, flipCount);
 
             //Updated by Syed Mohib...
-            if (GetComponent<HumanPlayer>().isFirst)
-                Game.ApplyFlipBonus(transform.position, flipCount);
+            //if (GetComponent<HumanPlayer>().isFirst)
+            //  Game.ApplyFlipBonus(transform.position, flipCount);
 
-            else
-                Game.ApplyFlipBonus(transform.position, 0);
+            //else
+            //Game.ApplyFlipBonus(transform.position, 0);
             //Till here...
         }
 

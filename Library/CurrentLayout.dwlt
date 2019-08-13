@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 548}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1600
     height: 817
-  m_MinSize: {x: 950, y: 548}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 224}
   m_MaxSize: {x: 12010, y: 4024}
   vertical: 0
-  controlID: 75
+  controlID: 55
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -443,8 +443,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 48fbffff
-      m_LastClickedID: -1208
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: d0fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -613,19 +613,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/_GameAssets/Scripts/Player/Actions
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/_GameAssets/Scripts/Player/Actions
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Git_SpeedyBoat_Cloned
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 94310000
-    m_LastClickedID: 12692
+    scrollPos: {x: 0, y: 190}
+    m_SelectedIDs: 7a410000
+    m_LastClickedID: 16762
     m_ExpandedIDs: 000000007629000094310000e23100006c32000034330000463300005033000066330000ba330000083400004034000062340000aa340000ee3400004435000048350000003700000a3800002e390000483900005c390000a0390000ce390000563a0000163b0000363b0000503b00005a3b0000223c0000583c0000303d0000603d00000e3e0000123e0000c4400000c0420000064300004e440000564400007844000004450000184500007445000096460000e44600000e47000086470000ae4700004e480000ee4800000c490000307700003277000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
