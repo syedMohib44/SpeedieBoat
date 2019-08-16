@@ -1010,7 +1010,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &219613604
 GameObject:
@@ -9573,6 +9573,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1990454105}
     m_Modifications:
+    - target: {fileID: 390169015894233341, guid: 078d458a31eb17d4f92fcac47478847d,
+        type: 3}
+      propertyPath: m_Name
+      value: DuckEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5251083391343433917, guid: 078d458a31eb17d4f92fcac47478847d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9627,11 +9632,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 390169015894233341, guid: 078d458a31eb17d4f92fcac47478847d,
-        type: 3}
-      propertyPath: m_Name
-      value: DuckEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 5612397782355325551, guid: 078d458a31eb17d4f92fcac47478847d,
         type: 3}
@@ -10528,6 +10528,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1990454105}
     m_Modifications:
+    - target: {fileID: 1999160297868702402, guid: 6b9aeb4cbb93b524198f0f57a3157409,
+        type: 3}
+      propertyPath: m_Name
+      value: Post
+      objectReference: {fileID: 0}
     - target: {fileID: 7092311638572605475, guid: 6b9aeb4cbb93b524198f0f57a3157409,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10582,11 +10587,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999160297868702402, guid: 6b9aeb4cbb93b524198f0f57a3157409,
-        type: 3}
-      propertyPath: m_Name
-      value: Post
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b9aeb4cbb93b524198f0f57a3157409, type: 3}
@@ -11703,6 +11703,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1990454105}
     m_Modifications:
+    - target: {fileID: 1047157049782558733, guid: 8dce092693c62a649975d28491d651b8,
+        type: 3}
+      propertyPath: m_Name
+      value: RoundTree
+      objectReference: {fileID: 0}
     - target: {fileID: 9104803178453617690, guid: 8dce092693c62a649975d28491d651b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11757,11 +11762,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1047157049782558733, guid: 8dce092693c62a649975d28491d651b8,
-        type: 3}
-      propertyPath: m_Name
-      value: RoundTree
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dce092693c62a649975d28491d651b8, type: 3}

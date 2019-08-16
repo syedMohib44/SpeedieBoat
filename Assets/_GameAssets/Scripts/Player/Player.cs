@@ -705,13 +705,18 @@ namespace SpeedyBoat
                     // We are on their right
                     if (m_lateralPos > player.m_lateralPos)
                     {
+                        if (collision.transform.gameObject.layer == LayerMask.NameToLayer("Player"))
+                        {
+                            Debug.Log("LPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPCCCCCCCCCCCCCCCCCCCCC");
+                            //this.transform.position = new Vector3(Mathf.MoveTowards(player.transform.position.x, this.transform.position.x - 5, 0), this.transform.position.y, this.transform.position.z);
+                            //OnHitWithPlayer();
+                        }
+
                         if (theirRightLateral > myLeftLateral)
                         {
                             var newLateral = myLeftLateral - extendedLateralWidth * .5f;
                             player.m_lateralPos = Mathf.Clamp(newLateral, LateralLimits.x, LateralLimits.y);
                             player.m_targetLateral = player.m_lateralPos;
-
-                         
                         }
                     }
                     // We are on their left
@@ -722,13 +727,15 @@ namespace SpeedyBoat
                         {
                             //transform.position = Vector2.MoveTowards(collision.transform.position, transform.position, -.2f * Time.deltaTime);
 
-                            this.transform.position -= collision.transform.position * Time.deltaTime * -.5f;                            //this.transform.position = Vector3.right * 10;
+                            //this.transform.position -= collision.transform.position * Time.deltaTime * -.5f;
+                            //this.transform.position = Vector3.right * 10;
+                            //this.transform.position = new Vector3(Mathf.MoveTowards(player.transform.position.x + this.transform.localScale.x, this.transform.position.x + 5, 0), this.transform.position.y, this.transform.position.z);
                             Debug.Log("Collided with AI");
                             //if (this.transform.position.x > this.transform.position.x + 5)
-                                //OnDeath(true);
-                                //this.transform.position = new Vector3(this.transform.position.x + 200 * Time.deltaTime, this.transform.position.y, this.transform.position.z);
-                            OnHitWithPlayer();
-                           
+                            //OnDeath(true);
+                            //this.transform.position = new Vector3(this.transform.position.x + 200 * Time.deltaTime, this.transform.position.y, this.transform.position.z);
+                            //OnHitWithPlayer();
+
                         }
 
                         if (theirLeftLateral > myRightLateral)
@@ -744,13 +751,13 @@ namespace SpeedyBoat
                     {
                         //transform.position = Vector2.MoveTowards(collision.transform.position, transform.position, -.2f * Time.deltaTime);
 
-                        this.transform.position -= collision.transform.position * Time.deltaTime * -.5f;
+                        //this.transform.position -= collision.transform.position * Time.deltaTime * -.5f;
                         // this.BoatRotation = Quaternion.FromToRotation(this.transform.position, this.transform.position * 10 * Time.deltaTime);
 
                         Debug.Log("Collided with Player");
                         //if (this.transform.position.x > this.transform.position.x + 5)
                             //OnDeath(true);
-                        OnHitWithPlayer();
+                        //OnHitWithPlayer();
                         //ShowSmokePuff(2, false);
                         //this.gameObject.transform.position *= 2;
                     }
