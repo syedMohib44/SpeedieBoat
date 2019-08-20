@@ -200,7 +200,7 @@ namespace SpeedyBoat
 
             Debug.Log(gameObject.transform.Find("CurrentLevel").transform.Find("Ground"));
 
-            if (levelNo < 4)
+            if (levelNo > 4)
             {
                 gameObject.transform.Find("CurrentLevel").transform.Find("Level" + levelNo).transform.Find("Ground").transform.Find("popUps").gameObject.SetActive(false);
             }
