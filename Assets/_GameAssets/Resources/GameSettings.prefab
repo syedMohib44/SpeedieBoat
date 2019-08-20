@@ -106,7 +106,7 @@ MonoBehaviour:
     AIPlayerCount: 7
     TrackPrefab: {fileID: 1780787708966526, guid: 9d535c14af984654cad1573fbfef002e,
       type: 3}
-    ScenePrefab: {fileID: 1579708001235316, guid: a9fe21206f319c34a944ca84b231be39,
+    ScenePrefab: {fileID: 1579708001235316, guid: c7f75dc2327a51b4a9e3ee87270a79aa,
       type: 3}
   - _: Level2
     AIPlayerCount: 7

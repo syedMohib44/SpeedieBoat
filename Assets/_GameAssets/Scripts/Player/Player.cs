@@ -243,7 +243,7 @@ namespace SpeedyBoat
 
 
         public Vector3 PositionTextPos
-        {            
+        {
             get { return m_positionText.transform.position; }
         }
 
@@ -705,18 +705,13 @@ namespace SpeedyBoat
                     // We are on their right
                     if (m_lateralPos > player.m_lateralPos)
                     {
-                        if (collision.transform.gameObject.layer == LayerMask.NameToLayer("Player"))
-                        {
-                            Debug.Log("LPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPCCCCCCCCCCCCCCCCCCCCC");
-                            //this.transform.position = new Vector3(Mathf.MoveTowards(player.transform.position.x, this.transform.position.x - 5, 0), this.transform.position.y, this.transform.position.z);
-                            //OnHitWithPlayer();
-                        }
-
                         if (theirRightLateral > myLeftLateral)
                         {
                             var newLateral = myLeftLateral - extendedLateralWidth * .5f;
                             player.m_lateralPos = Mathf.Clamp(newLateral, LateralLimits.x, LateralLimits.y);
                             player.m_targetLateral = player.m_lateralPos;
+
+
                         }
                     }
                     // We are on their left
@@ -727,14 +722,12 @@ namespace SpeedyBoat
                         {
                             //transform.position = Vector2.MoveTowards(collision.transform.position, transform.position, -.2f * Time.deltaTime);
 
-                            //this.transform.position -= collision.transform.position * Time.deltaTime * -.5f;
-                            //this.transform.position = Vector3.right * 10;
-                            //this.transform.position = new Vector3(Mathf.MoveTowards(player.transform.position.x + this.transform.localScale.x, this.transform.position.x + 5, 0), this.transform.position.y, this.transform.position.z);
+                            this.transform.position -= collision.transform.position * Time.deltaTime * -.5f;                            //this.transform.position = Vector3.right * 10;
                             Debug.Log("Collided with AI");
                             //if (this.transform.position.x > this.transform.position.x + 5)
                             //OnDeath(true);
                             //this.transform.position = new Vector3(this.transform.position.x + 200 * Time.deltaTime, this.transform.position.y, this.transform.position.z);
-                            //OnHitWithPlayer();
+                            OnHitWithPlayer();
 
                         }
 
@@ -751,13 +744,13 @@ namespace SpeedyBoat
                     {
                         //transform.position = Vector2.MoveTowards(collision.transform.position, transform.position, -.2f * Time.deltaTime);
 
-                        //this.transform.position -= collision.transform.position * Time.deltaTime * -.5f;
+                        this.transform.position -= collision.transform.position * Time.deltaTime * -.5f;
                         // this.BoatRotation = Quaternion.FromToRotation(this.transform.position, this.transform.position * 10 * Time.deltaTime);
 
                         Debug.Log("Collided with Player");
                         //if (this.transform.position.x > this.transform.position.x + 5)
-                            //OnDeath(true);
-                        //OnHitWithPlayer();
+                        //OnDeath(true);
+                        OnHitWithPlayer();
                         //ShowSmokePuff(2, false);
                         //this.gameObject.transform.position *= 2;
                     }
@@ -804,22 +797,21 @@ namespace SpeedyBoat
         }
 
 
+        protected Boat m_boat;
 
-        protected Boat          m_boat;
+        protected PlayerAction m_action;
 
-        protected PlayerAction  m_action;
+        protected RampProp m_activeRamp;
 
-        protected RampProp      m_activeRamp;
+        protected RampProp m_frontRamp, m_rearRamp;
 
-        protected RampProp      m_frontRamp, m_rearRamp;
+        protected float m_lateralAbs, m_boostTime, m_boostScale;
 
-        protected float         m_lateralAbs, m_boostTime, m_boostScale;
+        protected Vector3 m_trackDir, m_up;
 
-        protected Vector3       m_trackDir, m_up;
+        protected float m_lastWakeDist;
 
-        protected float         m_lastWakeDist;
-
-        protected float         m_lateralPos, m_targetLateral, m_lateralChangeTime;
-        protected Transform     m_spray, m_bubbles, m_character, m_positionText;
+        protected float m_lateralPos, m_targetLateral, m_lateralChangeTime;
+        protected Transform m_spray, m_bubbles, m_character, m_positionText;
     }
 }

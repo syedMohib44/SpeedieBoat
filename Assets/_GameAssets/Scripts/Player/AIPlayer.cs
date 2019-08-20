@@ -140,7 +140,7 @@ namespace SpeedyBoat
             //this.AISpeedScale = 0;
             //this.transform.position = Vector3.left * 5;
             if (this.transform.position.x > this.transform.position.x + 5)
-                //OnDeath(true);
+                OnDeath(true);
             ChangeAction(PlayerActionType.Fall, new FallPlayerActionInitialiser(LateralNormal, Game.Level.GroundHeight));
 
 
