@@ -181,6 +181,7 @@ namespace SpeedyBoat
                 Player.transform.parent = transform;
                 Player.gameObject.name = "Player";
             }
+      
             Player.Setup(this, GameSettings.Instance().BoatModels[0], GameSettings.Instance().PlayerColors[0], 0, 0);
 
             CreateAIPlayers();
@@ -371,6 +372,8 @@ namespace SpeedyBoat
             var colors = new List<Color>(GameSettings.Instance().PlayerColors);
             colors.RemoveAt(0); // Human uses 0
 
+            int randomSelect = Random.Range(1, 8);
+
             for (int i = 0; i < Level.AIPlayerCount; ++i)
             {
                 var go = m_aiPlayers.AllocateObject();
@@ -387,6 +390,18 @@ namespace SpeedyBoat
                     colors.RemoveAt(colorIndex);
 
                     go.GetComponent<AIPlayer>().Setup(this, GameSettings.Instance().BoatModels[0], color, distStart, lateralStart);
+                    Debug.Log(Player.gameObject.layer + "out of if");
+                    if (i == randomSelect)
+                    {
+                        Debug.Log(Player.gameObject.layer + "inside of if" + Player.gameObject.transform.position + " " + go.gameObject.transform.position);
+                        Player.GetComponent<HumanPlayer>().setPos(Player.gameObject.transform.position, go.gameObject.transform.position);
+                        //Vector3 tempPos = Player.gameObject.transform.position;
+                        //Player.gameObject.transform.position = go.transform.position;
+
+                        //go.transform.position = tempPos;
+                        //go.GetComponent<AIPlayer>().Setup(this, GameSettings.Instance().BoatModels[0], color, 0, 0);
+                        //continue;
+                    }
                 }
             }
         }

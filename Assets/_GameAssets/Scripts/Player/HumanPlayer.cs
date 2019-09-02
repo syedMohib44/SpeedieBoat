@@ -141,11 +141,20 @@ namespace SpeedyBoat
             m_audioSource.volume = Mathf.MoveTowards(m_audioSource.volume, 0, Time.deltaTime * 2);
         }
 
+        private Vector3 playerPos, aiPos;
+        private bool posIsSet;
+        public void setPos(Vector3 playerPos, Vector3 aiPos)
+        {
+            this.aiPos = aiPos;
+            this.playerPos = playerPos;
+            posIsSet = true;
+        }
 
         protected override void Update()
         {
             base.Update();
-
+          
+            //TODO: need to change position on every level change here it works...
             if (Game.Mode != Game.GameMode.LevelComplete && TravelDist > Game.Level.FinishLineDist)
             {
                 Game.OnLevelComplete();

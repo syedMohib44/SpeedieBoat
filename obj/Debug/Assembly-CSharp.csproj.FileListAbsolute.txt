@@ -1,2 +1,4 @@
 /Users/kashifmalik/Documents/KEF Studios/Games/Speedie Boat/IOS/Git_SpeedyBoat_Cloned/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
 /Users/kashifmalik/Documents/KEF Studios/Games/Speedie Boat/IOS/Git_SpeedyBoat_Cloned/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
+D:\Git_SpeedyBoat_Cloned\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+D:\Git_SpeedyBoat_Cloned\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
